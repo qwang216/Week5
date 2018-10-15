@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		D4B3AF012166C90D00D839C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B3AF002166C90D00D839C7 /* AppDelegate.swift */; };
-		D4B3AF032166C90D00D839C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B3AF022166C90D00D839C7 /* ViewController.swift */; };
 		D4B3AF062166C90D00D839C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4B3AF042166C90D00D839C7 /* Main.storyboard */; };
 		D4B3AF082166C90D00D839C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4B3AF072166C90D00D839C7 /* Assets.xcassets */; };
 		D4B3AF0B2166C90D00D839C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4B3AF092166C90D00D839C7 /* LaunchScreen.storyboard */; };
 		D4B3AF162166C90E00D839C7 /* Week5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B3AF152166C90E00D839C7 /* Week5Tests.swift */; };
 		D4B3AF212166C90E00D839C7 /* Week5UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B3AF202166C90E00D839C7 /* Week5UITests.swift */; };
+		D4DE88A8216CD719007FB5A4 /* TimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DE88A7216CD719007FB5A4 /* TimerController.swift */; };
+		D4DE88AA216CD82F007FB5A4 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DE88A9216CD82F007FB5A4 /* TimerViewModel.swift */; };
+		D4DE88AC216EC2AA007FB5A4 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DE88AB216EC2AA007FB5A4 /* Time.swift */; };
+		D4DE88AE216EC2BA007FB5A4 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DE88AD216EC2BA007FB5A4 /* Observable.swift */; };
+		D4DE88B5216EC99E007FB5A4 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DE88B4216EC99E007FB5A4 /* Double+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,6 @@
 /* Begin PBXFileReference section */
 		D4B3AEFD2166C90D00D839C7 /* Week5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Week5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4B3AF002166C90D00D839C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D4B3AF022166C90D00D839C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D4B3AF052166C90D00D839C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D4B3AF072166C90D00D839C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4B3AF0A2166C90D00D839C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,11 @@
 		D4B3AF1C2166C90E00D839C7 /* Week5UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Week5UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4B3AF202166C90E00D839C7 /* Week5UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week5UITests.swift; sourceTree = "<group>"; };
 		D4B3AF222166C90E00D839C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4DE88A7216CD719007FB5A4 /* TimerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerController.swift; sourceTree = "<group>"; };
+		D4DE88A9216CD82F007FB5A4 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
+		D4DE88AB216EC2AA007FB5A4 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		D4DE88AD216EC2BA007FB5A4 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		D4DE88B4216EC99E007FB5A4 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +105,12 @@
 		D4B3AEFF2166C90D00D839C7 /* Week5 */ = {
 			isa = PBXGroup;
 			children = (
-				D4B3AF002166C90D00D839C7 /* AppDelegate.swift */,
-				D4B3AF022166C90D00D839C7 /* ViewController.swift */,
-				D4B3AF042166C90D00D839C7 /* Main.storyboard */,
-				D4B3AF072166C90D00D839C7 /* Assets.xcassets */,
-				D4B3AF092166C90D00D839C7 /* LaunchScreen.storyboard */,
+				D4DE88B2216EC968007FB5A4 /* Storyboards */,
+				D4DE88B0216EC953007FB5A4 /* ViewModels */,
+				D4DE88AF216EC94C007FB5A4 /* Models */,
+				D4DE88B1216EC95A007FB5A4 /* ViewControllers */,
+				D4DE88B3216EC978007FB5A4 /* HelperFiles */,
+				D4DE88B6216EC9A2007FB5A4 /* Extensions */,
 				D4B3AF0C2166C90D00D839C7 /* Info.plist */,
 			);
 			path = Week5;
@@ -123,6 +132,57 @@
 				D4B3AF222166C90E00D839C7 /* Info.plist */,
 			);
 			path = Week5UITests;
+			sourceTree = "<group>";
+		};
+		D4DE88AF216EC94C007FB5A4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D4DE88AB216EC2AA007FB5A4 /* Time.swift */,
+				D4DE88AD216EC2BA007FB5A4 /* Observable.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D4DE88B0216EC953007FB5A4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D4DE88A9216CD82F007FB5A4 /* TimerViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D4DE88B1216EC95A007FB5A4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D4DE88A7216CD719007FB5A4 /* TimerController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D4DE88B2216EC968007FB5A4 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D4B3AF042166C90D00D839C7 /* Main.storyboard */,
+				D4B3AF092166C90D00D839C7 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D4DE88B3216EC978007FB5A4 /* HelperFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D4B3AF002166C90D00D839C7 /* AppDelegate.swift */,
+				D4B3AF072166C90D00D839C7 /* Assets.xcassets */,
+			);
+			path = HelperFiles;
+			sourceTree = "<group>";
+		};
+		D4DE88B6216EC9A2007FB5A4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D4DE88B4216EC99E007FB5A4 /* Double+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +316,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4B3AF032166C90D00D839C7 /* ViewController.swift in Sources */,
+				D4DE88B5216EC99E007FB5A4 /* Double+Extensions.swift in Sources */,
+				D4DE88AC216EC2AA007FB5A4 /* Time.swift in Sources */,
+				D4DE88AE216EC2BA007FB5A4 /* Observable.swift in Sources */,
 				D4B3AF012166C90D00D839C7 /* AppDelegate.swift in Sources */,
+				D4DE88AA216CD82F007FB5A4 /* TimerViewModel.swift in Sources */,
+				D4DE88A8216CD719007FB5A4 /* TimerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,7 +497,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 55V3ELH4AV;
 				INFOPLIST_FILE = Week5/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -453,7 +517,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 55V3ELH4AV;
 				INFOPLIST_FILE = Week5/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

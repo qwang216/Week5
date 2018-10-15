@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Timer Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="TimerController" customModule="Week5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QzQ-rF-xNZ">
+                                <rect key="frame" x="93.5" y="30" width="188.5" height="84"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="Ltd-Lp-8bn">
+                                <rect key="frame" x="63.5" y="507" width="248" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PJk-Yv-mHn">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <color key="backgroundColor" red="0.31372549020000001" green="0.7725490196" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="Ed2-QI-Oke"/>
+                                            <constraint firstAttribute="height" constant="100" id="wUL-jX-Fe9"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Start">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Dw-9e-gDG">
+                                        <rect key="frame" x="148" y="0.0" width="100" height="100"/>
+                                        <color key="backgroundColor" red="1" green="0.1043915102" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="7dM-0v-eTg"/>
+                                            <constraint firstAttribute="height" constant="100" id="cA5-Rb-z3c"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Reset">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8d8-SQ-tbH">
+                                <rect key="frame" x="27.5" y="134" width="320" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLK-yP-dtp">
+                                <rect key="frame" x="35" y="375" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="P2E-d4-QKa"/>
+                                    <constraint firstAttribute="height" constant="100" id="qym-t7-kOE"/>
+                                </constraints>
+                                <state key="normal" title="Resume"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ozq-mE-gmM">
+                                <rect key="frame" x="243" y="375" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="1N9-iF-rd3"/>
+                                    <constraint firstAttribute="width" constant="100" id="PaG-vx-u5T"/>
+                                </constraints>
+                                <state key="normal" title="Pause"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ltd-Lp-8bn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="18C-LV-VZd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ltd-Lp-8bn" secondAttribute="bottom" constant="60" id="1Sy-HY-FUF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ozq-mE-gmM" secondAttribute="trailing" constant="32" id="3eH-Kt-d1X"/>
+                            <constraint firstItem="QLK-yP-dtp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="DYq-kj-uKz"/>
+                            <constraint firstItem="QzQ-rF-xNZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="EVm-to-wvP"/>
+                            <constraint firstItem="QzQ-rF-xNZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HpU-1F-P2F"/>
+                            <constraint firstItem="8d8-SQ-tbH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L59-mL-2JE"/>
+                            <constraint firstItem="Ltd-Lp-8bn" firstAttribute="top" secondItem="QLK-yP-dtp" secondAttribute="bottom" constant="32" id="c9x-t6-khc"/>
+                            <constraint firstItem="8d8-SQ-tbH" firstAttribute="top" secondItem="QzQ-rF-xNZ" secondAttribute="bottom" constant="20" id="l3Y-Le-9X0"/>
+                            <constraint firstItem="Ltd-Lp-8bn" firstAttribute="top" secondItem="ozq-mE-gmM" secondAttribute="bottom" constant="32" id="oFI-q2-W3G"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="pauseButton" destination="ozq-mE-gmM" id="OZd-Ty-hef"/>
+                        <outlet property="resetButton" destination="3Dw-9e-gDG" id="6MD-Jr-dwT"/>
+                        <outlet property="resumeButton" destination="QLK-yP-dtp" id="w0b-TY-rrC"/>
+                        <outlet property="startPauseButton" destination="PJk-Yv-mHn" id="Vcn-dg-mf0"/>
+                        <outlet property="timerLabel" destination="QzQ-rF-xNZ" id="QMr-Fs-P9Q"/>
+                        <outlet property="timerPickerView" destination="8d8-SQ-tbH" id="JHW-i9-zvx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
